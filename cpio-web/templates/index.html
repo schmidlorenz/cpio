@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CPIO - Cuisine Purpose Input/Output</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
+	<script type="text/javascript" src="assets/js/main.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="row container-fluid">
+			<div class="col-md-8 col-md-offset-2">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">CPIO</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="log/">Overview <span class="badge">1</span></a></li>
+						<li class="dropdown">
+							<a href="new/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">New <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="new/sourdough">New Sourdough</a></li>
+								<li><a href="new/kombucha">New Kombucha</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="new/garden">New Garden</a></li>
+							</ul>
+						</li>
+						<li><a href="log/">Measurements</a></li>
+						<li class="dropdown">
+							<a href="new/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="new/sourdough"><span class="glyphicon glyphicon-wrench"></span>&nbsp; Settings</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="new/garden"><span class="glyphicon glyphicon-log-out"></span>&nbsp; Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="nav navbar-right btn-group" role="group" aria-label="...">
+						<button type="button" class="btn btn-success navbar-btn">
+							Sourdough rising!
+						</button>
+						<button type="button" class="btn btn-default navbar-btn">
+							Temp: 30&#176;C
+						</button>
+						<button type="button" class="btn btn-default navbar-btn">
+							18h more
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<main class="row container-fluid">
+		<section class="col-md-8 col-md-offset-2">
+			<div class="alert alert-warning alert-dismissible" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <strong>Warning!</strong> Temperature is very high.
+			</div>
+			<h2>Overview</h2>
+
+		</section>
+	</main>
+</body>
+</html>

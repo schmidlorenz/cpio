@@ -1,0 +1,21 @@
+{
+  "name": "cpio-templates",
+  "homepage": "https://github.com/schmidlorenz/cpio",
+  "authors": [
+    "Lorenz Schmid <schmid.lorenz@gmail.com>"
+  ],
+  "description": "HTML Templates for Django/Python CPIO project",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "Apache2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

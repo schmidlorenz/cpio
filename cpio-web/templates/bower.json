@@ -1,15 +1,13 @@
 {
-  "name": "cpio-templates",
-  "homepage": "https://github.com/schmidlorenz/cpio",
+  "name": "cpio-frontend",
+  "description": "",
+  "main": "",
   "authors": [
     "Lorenz Schmid <schmid.lorenz@gmail.com>"
   ],
-  "description": "HTML Templates for Django/Python CPIO project",
-  "main": "",
-  "moduleType": [
-    "globals"
-  ],
   "license": "Apache2",
+  "homepage": "https://github.com/schmidlorenz/cpio",
+  "moduleType": [],
   "private": true,
   "ignore": [
     "**/.*",
@@ -17,5 +15,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.6",
+    "jquery": "~2.1.4"
+  }
 }

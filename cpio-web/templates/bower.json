@@ -1,13 +1,9 @@
 {
   "name": "cpio-frontend",
-  "description": "",
-  "main": "",
   "authors": [
     "Lorenz Schmid <schmid.lorenz@gmail.com>"
   ],
-  "license": "Apache2",
   "homepage": "https://github.com/schmidlorenz/cpio",
-  "moduleType": [],
   "private": true,
   "ignore": [
     "**/.*",

@@ -39,6 +39,7 @@ eagle.epf
 
 *.eps
 
+*.lck
 
 ### OSX ###
 .DS_Store

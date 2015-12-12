@@ -23,7 +23,7 @@ gulp.task('bower', function() { 
  		.pipe(gulp.dest(config.bowerDir)) 
 });
 
-gulp.task('icons', function() { 
+gulp.task('fonts', function() { 
 	return gulp.src(config.bowerDir + '/bootstrap-sass/assets/fonts/bootstrap/**.*') 
 		.pipe(gulp.dest('./assets/fonts')); 
 });
@@ -52,4 +52,4 @@ gulp.task('css', function() { 
  		.pipe(gulp.dest(config.sassDestPath)); 
 });
 
-  gulp.task('default', ['bower', 'icons', 'js', 'css']);
+  gulp.task('default', ['bower', 'fonts', 'js', 'css']);

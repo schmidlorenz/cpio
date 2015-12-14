@@ -22,4 +22,4 @@ Use the installer script [INSTALL.sh](INSTALL.sh) to install all necessary softw
 The following commands are available
  - `gulp` generate the static files
  - `gulp clean` remove all generated files
- - `gulp serve` automatically regenerate files in background and stream output on [localhost:3000](http://localhost:3000)
+ - `gulp serve` automatically regenerate files in background and stream output on [localhost:3000](http://localhost:3000), cancel with `Ctrl + C`

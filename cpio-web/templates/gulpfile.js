@@ -8,8 +8,9 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	rename = require('gulp-rename'),
 	concat = require('gulp-concat'),
+	rimraf = require('rimraf'),
 	notify = require('gulp-notify'),
-	rimraf = require('rimraf');
+	browserSync = require('browser-sync').create();
 
 var config = {
 	htmlSrcPath:  './src/html',
@@ -32,6 +33,7 @@ gulp.task('bower', function() { 
 gulp.task('html', function() {
 	return gulp.src(config.htmlSrcPath + '/*.html')
 		.pipe(gulp.dest(config.htmlDestPath))
+		.pipe(browserSync.stream())
 		.pipe(notify({ message: 'HTML task complete' }));
 });
 
@@ -50,6 +52,7 @@ gulp.task('css', function() { 
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifycss())
  		.pipe(gulp.dest(config.sassDestPath))
+		.pipe(browserSync.stream())
 		.pipe(notify({ message: 'Styles task complete' }));
 });
 
@@ -62,6 +65,7 @@ gulp.task('js', function() {
 		.pipe(rename({suffix: '.min'}))
 		.pipe(uglify())
 		.pipe(gulp.dest(config.jsDestPath))
+		.pipe(browserSync.stream())
 		.pipe(notify({ message: 'Scripts task complete' }));
 });
 
@@ -80,4 +84,21 @@ gulp.task('clean', function(cb) {
 // Default
   gulp.task('default', ['clean'], function() {
 	gulp.start('bower', 'html', 'fonts', 'js', 'css');
+});
+
+// Watch
+gulp.task('serve', function() {
+
+	browserSync.init({
+		server: "./out"
+	});
+
+	// Watch html files
+	gulp.watch(config.htmlSrcPath + '/*.html', ['html']);
+
+	// Watch sass files
+	gulp.watch(config.sassSrcPath + '/*.scss', ['css']);
+
+	// Watch js files
+	gulp.watch(config.jaSrcPath + '/*.js', ['js']);
 });

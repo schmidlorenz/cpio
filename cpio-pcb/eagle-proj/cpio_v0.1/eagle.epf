@@ -368,7 +368,6 @@ UsedLibrary="/Applications/EAGLE-7.4.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/zilog.lbr"
 UsedLibrary="/Users/lorenz/dev/cpio/cpio-pcb/eagle-lbr/cpio.lbr"
-UsedLibrary="/Users/lorenz/dev/cpio/cpio-pcb/eagle-lbr/rpi.lbr"
 
 [Win_1]
 Type="Control Panel"

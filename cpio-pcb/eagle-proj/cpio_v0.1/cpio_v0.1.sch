@@ -3669,6 +3669,8 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <text x="251.46" y="10.16" size="2.54" layer="97">DeCap?!</text>
 <text x="251.46" y="17.78" size="2.54" layer="97">Load Diode missing!</text>
 <text x="177.8" y="-198.12" size="2.54" layer="97">Plugs for potential pH Sensors missing!</text>
+<text x="193.04" y="-10.16" size="2.54" layer="97" rot="R180">To which GPIOs?!</text>
+<text x="226.06" y="-99.06" size="2.54" layer="97" rot="R180">To which GPIOs?!</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="5.08" y="-40.64"/>
@@ -3742,8 +3744,8 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <instance part="GND23" gate="1" x="223.52" y="-129.54" rot="R270"/>
 <instance part="R_I2C_0" gate="G$1" x="-73.66" y="2.54" rot="R90"/>
 <instance part="R_I2C_1" gate="G$1" x="-66.04" y="5.08" rot="R90"/>
-<instance part="R_1WIRE" gate="G$1" x="12.7" y="-5.08" rot="R90"/>
-<instance part="SUPPLY12" gate="G$1" x="12.7" y="2.54"/>
+<instance part="R_1WIRE" gate="G$1" x="-81.28" y="0" rot="R90"/>
+<instance part="SUPPLY12" gate="G$1" x="15.24" y="-12.7"/>
 <instance part="SENS_HUM_0" gate="G$1" x="322.58" y="-177.8" rot="R180"/>
 <instance part="SENS_HUM_1" gate="G$1" x="322.58" y="-198.12" rot="R180"/>
 <instance part="SUPPLY13" gate="G$1" x="312.42" y="-170.18"/>
@@ -3772,7 +3774,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <instance part="R_SPI_0" gate="G$1" x="-81.28" y="-20.32" rot="R90"/>
 <instance part="R_SPI_1" gate="G$1" x="-73.66" y="-17.78" rot="R90"/>
 <instance part="R_SPI_2" gate="G$1" x="-66.04" y="-15.24" rot="R90"/>
-<instance part="R_SPI_3" gate="G$1" x="20.32" y="-20.32" rot="R90"/>
+<instance part="R_SPI_3" gate="G$1" x="15.24" y="-20.32" rot="R90"/>
 <instance part="STP_DN" gate="G$1" x="68.58" y="-73.66"/>
 <instance part="LDO" gate="G$1" x="73.66" y="-134.62"/>
 </instances>
@@ -3781,8 +3783,9 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <nets>
 <net name="GPIO4" class="0">
 <segment>
-<wire x1="-43.18" y1="-5.08" x2="-48.26" y2="-5.08" width="0.1524" layer="91"/>
 <label x="-48.26" y="-5.08" size="1.778" layer="95"/>
+<pinref part="R_1WIRE" gate="G$1" pin="1"/>
+<wire x1="-43.18" y1="-5.08" x2="-81.28" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -4092,7 +4095,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <label x="-17.78" y="-25.4" size="1.778" layer="95"/>
 <pinref part="JP1" gate="G$1" pin="24"/>
 <pinref part="R_SPI_3" gate="G$1" pin="1"/>
-<wire x1="-17.78" y1="-25.4" x2="20.32" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-25.4" x2="15.24" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CAMERA" gate="G$1" pin="5"/>
@@ -4462,15 +4465,15 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <junction x="-58.42" y="12.7"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="-58.42" y1="2.54" x2="-33.02" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="R_1WIRE" gate="G$1" pin="2"/>
+<wire x1="-81.28" y1="5.08" x2="-81.28" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="12.7" x2="-73.66" y2="12.7" width="0.1524" layer="91"/>
+<junction x="-73.66" y="12.7"/>
 </segment>
 <segment>
 <pinref part="SUPPLY12" gate="G$1" pin="3.3V"/>
-<pinref part="R_1WIRE" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="2.54" x2="12.7" y2="0" width="0.1524" layer="91"/>
 <pinref part="R_SPI_3" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="-15.24" x2="20.32" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="2.54" x2="12.7" y2="2.54" width="0.1524" layer="91"/>
-<junction x="12.7" y="2.54"/>
+<wire x1="15.24" y1="-15.24" x2="15.24" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SENS_HUM_1" gate="G$1" pin="1"/>
@@ -4576,12 +4579,6 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <wire x1="312.42" y1="-116.84" x2="292.1" y2="-116.84" width="0.1524" layer="91"/>
 <junction x="312.42" y="-116.84"/>
 <label x="292.1" y="-116.84" size="1.778" layer="95"/>
-</segment>
-<segment>
-<label x="-17.78" y="-10.16" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="12"/>
-<pinref part="R_1WIRE" gate="G$1" pin="1"/>
-<wire x1="-17.78" y1="-10.16" x2="12.7" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -4763,6 +4760,61 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <pinref part="ADC" gate="G$1" pin="AIN1"/>
 <wire x1="223.52" y1="-144.78" x2="213.36" y2="-144.78" width="0.1524" layer="91"/>
 <label x="208.28" y="-144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM0" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="12"/>
+<wire x1="-17.78" y1="-10.16" x2="-2.54" y2="-10.16" width="0.1524" layer="91"/>
+<label x="-17.78" y="-10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="R_HSS_PROT_0" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="0" x2="177.8" y2="0" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="R_HSS_PROT_1" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="-2.54" x2="177.8" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="R_HSS_PROT_2" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="-5.08" x2="177.8" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="R_HSS_PROT_3" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="-7.62" x2="177.8" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<pinref part="R_SS_PROT0" gate="G$1" pin="1"/>
+<wire x1="223.52" y1="-81.28" x2="210.82" y2="-81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="R_SS_PROT1" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="-86.36" x2="210.82" y2="-86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="R_SS_PROT2" gate="G$1" pin="1"/>
+<wire x1="233.68" y1="-91.44" x2="210.82" y2="-91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="R_SS_PROT3" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="-96.52" x2="210.82" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

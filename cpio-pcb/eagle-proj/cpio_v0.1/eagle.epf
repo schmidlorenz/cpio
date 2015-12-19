@@ -369,12 +369,5 @@ UsedLibrary="/Applications/EAGLE-7.4.0/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE-7.4.0/lbr/zilog.lbr"
 UsedLibrary="/Users/lorenz/dev/cpio/cpio-pcb/eagle-lbr/cpio.lbr"
 
-[Win_1]
-Type="Control Panel"
-Loc="0 23 1435 877"
-State=2
-Number=0
-
 [Desktop]
 Screen="1440 900"
-Window="Win_1"

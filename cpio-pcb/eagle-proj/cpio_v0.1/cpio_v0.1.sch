@@ -3991,7 +3991,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="SENS_PH1" library="cpio" deviceset="XH-A-3" device=""/>
+<part name="SENS_BRIGHT" library="cpio" deviceset="XH-A-3" device=""/>
 <part name="SUPPLY25" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="C_IO1" library="SparkFun-Passives" deviceset="CAP" device="0805" value="100n"/>
 <part name="GND53" library="supply1" deviceset="GND" device=""/>
@@ -4128,7 +4128,7 @@ Pi should have an internal supply for 3.3V etc.</text>
 <instance part="R_HSS_PROT_2" gate="G$1" x="345.44" y="-27.94"/>
 <instance part="R_HSS_PROT_3" gate="G$1" x="355.6" y="-30.48"/>
 <instance part="GND27" gate="1" x="355.6" y="-254"/>
-<instance part="R_BRIGHT" gate="G$1" x="345.44" y="-218.44"/>
+<instance part="R_BRIGHT" gate="G$1" x="345.44" y="-213.36"/>
 <instance part="CAMERA" gate="G$1" x="401.32" y="-218.44" rot="R180"/>
 <instance part="GND28" gate="1" x="393.7" y="-233.68"/>
 <instance part="SUPPLY15" gate="G$1" x="393.7" y="-208.28"/>
@@ -4192,8 +4192,8 @@ Pi should have an internal supply for 3.3V etc.</text>
 <instance part="C_U_FILT" gate="G$1" x="256.54" y="-33.02"/>
 <instance part="GND48" gate="1" x="251.46" y="-38.1"/>
 <instance part="SENS_PH" gate="G$1" x="368.3" y="-241.3" rot="R180"/>
-<instance part="C_ADC_B" gate="G$1" x="332.74" y="-223.52"/>
-<instance part="GND49" gate="1" x="332.74" y="-228.6"/>
+<instance part="C_ADC_B" gate="G$1" x="332.74" y="-218.44"/>
+<instance part="GND49" gate="1" x="332.74" y="-223.52"/>
 <instance part="GND50" gate="1" x="327.66" y="-251.46"/>
 <instance part="C_ADC_PH" gate="G$1" x="327.66" y="-246.38"/>
 <instance part="R_PH" gate="G$1" x="345.44" y="-241.3"/>
@@ -4208,8 +4208,8 @@ Pi should have an internal supply for 3.3V etc.</text>
 <instance part="GND51" gate="1" x="165.1" y="-238.76"/>
 <instance part="GND52" gate="1" x="172.72" y="-251.46"/>
 <instance part="SUPPLY7" gate="G$1" x="172.72" y="-218.44"/>
-<instance part="SENS_PH1" gate="G$1" x="368.3" y="-218.44" rot="R180"/>
-<instance part="SUPPLY25" gate="G$1" x="358.14" y="-210.82"/>
+<instance part="SENS_BRIGHT" gate="G$1" x="368.3" y="-213.36" rot="R180"/>
+<instance part="SUPPLY25" gate="G$1" x="358.14" y="-205.74"/>
 <instance part="C_IO1" gate="G$1" x="363.22" y="-231.14" rot="R90"/>
 <instance part="GND53" gate="1" x="365.76" y="-233.68"/>
 </instances>
@@ -4406,10 +4406,10 @@ Pi should have an internal supply for 3.3V etc.</text>
 <wire x1="416.56" y1="-55.88" x2="416.56" y2="-63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="360.68" y1="-220.98" x2="355.6" y2="-220.98" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="-220.98" x2="355.6" y2="-243.84" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="-215.9" x2="355.6" y2="-215.9" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="-215.9" x2="355.6" y2="-243.84" width="0.1524" layer="91"/>
 <pinref part="GND27" gate="1" pin="GND"/>
-<pinref part="SENS_PH1" gate="G$1" pin="3"/>
+<pinref part="SENS_BRIGHT" gate="G$1" pin="3"/>
 <pinref part="SENS_PH" gate="G$1" pin="3"/>
 <wire x1="355.6" y1="-243.84" x2="355.6" y2="-251.46" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="-243.84" x2="355.6" y2="-243.84" width="0.1524" layer="91"/>
@@ -5191,10 +5191,10 @@ Pi should have an internal supply for 3.3V etc.</text>
 <pinref part="SENS_PH" gate="G$1" pin="1"/>
 <wire x1="360.68" y1="-238.76" x2="358.14" y2="-238.76" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="-238.76" x2="358.14" y2="-231.14" width="0.1524" layer="91"/>
-<pinref part="SENS_PH1" gate="G$1" pin="1"/>
-<wire x1="358.14" y1="-231.14" x2="358.14" y2="-215.9" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="-215.9" x2="358.14" y2="-210.82" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="-215.9" x2="358.14" y2="-215.9" width="0.1524" layer="91"/>
+<pinref part="SENS_BRIGHT" gate="G$1" pin="1"/>
+<wire x1="358.14" y1="-231.14" x2="358.14" y2="-210.82" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="-210.82" x2="358.14" y2="-205.74" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="-210.82" x2="358.14" y2="-210.82" width="0.1524" layer="91"/>
 <pinref part="SUPPLY25" gate="G$1" pin="3.3V"/>
 <pinref part="C_IO1" gate="G$1" pin="1"/>
 <junction x="358.14" y="-231.14"/>
@@ -5403,18 +5403,18 @@ Pi should have an internal supply for 3.3V etc.</text>
 <net name="N$35" class="0">
 <segment>
 <pinref part="R_BRIGHT" gate="G$1" pin="2"/>
-<wire x1="360.68" y1="-218.44" x2="350.52" y2="-218.44" width="0.1524" layer="91"/>
-<pinref part="SENS_PH1" gate="G$1" pin="2"/>
+<wire x1="360.68" y1="-213.36" x2="350.52" y2="-213.36" width="0.1524" layer="91"/>
+<pinref part="SENS_BRIGHT" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="ADC_BRIGHT" class="0">
 <segment>
 <pinref part="R_BRIGHT" gate="G$1" pin="1"/>
-<wire x1="340.36" y1="-218.44" x2="332.74" y2="-218.44" width="0.1524" layer="91"/>
-<label x="322.58" y="-218.44" size="1.778" layer="95"/>
+<wire x1="340.36" y1="-213.36" x2="332.74" y2="-213.36" width="0.1524" layer="91"/>
+<label x="320.04" y="-213.36" size="1.778" layer="95"/>
 <pinref part="C_ADC_B" gate="G$1" pin="1"/>
-<wire x1="332.74" y1="-218.44" x2="330.2" y2="-218.44" width="0.1524" layer="91"/>
-<junction x="332.74" y="-218.44"/>
+<wire x1="332.74" y1="-213.36" x2="320.04" y2="-213.36" width="0.1524" layer="91"/>
+<junction x="332.74" y="-213.36"/>
 </segment>
 <segment>
 <wire x1="353.06" y1="-170.18" x2="340.36" y2="-170.18" width="0.1524" layer="91"/>

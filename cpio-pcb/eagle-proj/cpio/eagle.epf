@@ -1,0 +1,41 @@
+[Eagle]
+Version="07 05 00"
+Platform="Mac OS X"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/GeekAmmo.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/LilyPad-Wearables.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-Aesthetics.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-AnalogIC.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-Boards.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-Capacitors.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-Connectors.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-DigitalIC.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-DiscreteSemi.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-Displays.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-Electromechanical.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-FreqCtrl.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-LED.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-Passives.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-PowerIC.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-RF.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-Resistors.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-Retired.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/SparkFun-Sensors.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/User-Submitted.lbr"
+UsedLibrary="/Users/lorenz/owncloud/apps/eagle/Libraries/adafruit.lbr"
+UsedLibrary="/Users/lorenz/dev/cpio/cpio-pcb/eagle-lbr/cpio.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="0 23 599 422"
+State=1
+Number=0
+
+[Desktop]
+Screen="1440 900"
+Window="Win_1"

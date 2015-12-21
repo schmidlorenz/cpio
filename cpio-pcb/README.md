@@ -21,6 +21,21 @@ The two folder with the prefix "eagle-" are used by Eagle:
 
 The [components](components/) folder contains the part list of all used components as well as their documentation.
 
+## Eagle Grid Settings
+
+In order to have correct alignment of all components between different developers please use the following grid settings:
+
+ - Grid: 0.635mm
+ - Alt Grid: 0.127mm
+
+
+The default setting can be changed in `[Eagle Install Dir]/scr/eagle.src`:
+````
+BRD:
+Grid mm 0.635 on;
+Grid alt mm 0.127;
+````
+
 ## git diff
 
 In order to be able to `git diff` for Eagle schematic (`.sch`) and layout files (`.brd`) use the [eagle-automation](https://github.com/guyzmo/eagle-automation) Python tool (also called `pea`) which generates images highlighting the differences visually.

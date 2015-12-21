@@ -5722,6 +5722,10 @@ Source: www.kingbright.com</description>
 <part name="S1" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="SML0805"/>
 <part name="LED2" library="led" deviceset="LED" device="SML0805"/>
+<part name="R_BRIGHT1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1k"/>
+<part name="R_BRIGHT2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1k"/>
+<part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5893,6 +5897,10 @@ Pi should have an internal supply for 3.3V etc.</text>
 <instance part="S1" gate="1" x="116.84" y="-142.24"/>
 <instance part="LED1" gate="G$1" x="38.1" y="-66.04"/>
 <instance part="LED2" gate="G$1" x="264.16" y="-226.06"/>
+<instance part="R_BRIGHT1" gate="G$1" x="426.72" y="-208.28" rot="R90"/>
+<instance part="R_BRIGHT2" gate="G$1" x="436.88" y="-198.12" rot="R90"/>
+<instance part="SUPPLY12" gate="G$1" x="436.88" y="-193.04"/>
+<instance part="GND10" gate="1" x="426.72" y="-215.9"/>
 </instances>
 <busses>
 </busses>
@@ -6154,6 +6162,10 @@ Pi should have an internal supply for 3.3V etc.</text>
 <pinref part="S1" gate="1" pin="P1"/>
 <wire x1="116.84" y1="-147.32" x2="119.38" y2="-147.32" width="0.1524" layer="91"/>
 <junction x="119.38" y="-147.32"/>
+</segment>
+<segment>
+<pinref part="R_BRIGHT1" gate="G$1" pin="1"/>
+<pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="GPIO17" class="0">
@@ -6694,6 +6706,10 @@ Pi should have an internal supply for 3.3V etc.</text>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <pinref part="JP2" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="R_BRIGHT2" gate="G$1" pin="2"/>
+<pinref part="SUPPLY12" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="N$15" class="0">
 <segment>
@@ -6858,6 +6874,8 @@ Pi should have an internal supply for 3.3V etc.</text>
 <pinref part="R_BRIGHT" gate="G$1" pin="2"/>
 <wire x1="447.04" y1="-203.2" x2="436.88" y2="-203.2" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="R_BRIGHT2" gate="G$1" pin="1"/>
+<junction x="436.88" y="-203.2"/>
 </segment>
 </net>
 <net name="ADC_BRIGHT" class="0">
@@ -6868,6 +6886,8 @@ Pi should have an internal supply for 3.3V etc.</text>
 <pinref part="C_ADC_B" gate="G$1" pin="1"/>
 <wire x1="419.1" y1="-203.2" x2="406.4" y2="-203.2" width="0.1524" layer="91"/>
 <junction x="419.1" y="-203.2"/>
+<pinref part="R_BRIGHT1" gate="G$1" pin="2"/>
+<junction x="426.72" y="-203.2"/>
 </segment>
 <segment>
 <wire x1="375.92" y1="-172.72" x2="363.22" y2="-172.72" width="0.1524" layer="91"/>

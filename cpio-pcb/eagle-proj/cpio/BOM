@@ -1,0 +1,73 @@
+Partlist
+
+Exported from cpio.sch at 21.12.15 22:32
+
+EAGLE Version 7.5.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part        Value          Device           Package     Library             Sheet
+
+ADC         ADS1115        ADS1115          TFSOP-10    cpio                1
+C_ADC       100n           CAP0805          0805        SparkFun-Passives   1
+C_ADC_B     100n           CAP0805          0805        SparkFun-Passives   1
+C_ADC_PH    100n           CAP0805          0805        SparkFun-Passives   1
+C_CUR_FILT  100n           CAP0805          0805        SparkFun-Passives   1
+C_IO1       100n           CAP0805          0805        SparkFun-Passives   1
+C_LDO3.3_1  1u             CAP0805          0805        SparkFun-Passives   1
+C_LDO3.3_2  1u             CAP0805          0805        SparkFun-Passives   1
+C_LVL       100n           CAP0805          0805        SparkFun-Passives   1
+C_MUX       100n           CAP0805          0805        SparkFun-Passives   1
+C_RL_0      100n           CAP0805          0805        SparkFun-Passives   1
+C_RL_2      100n           CAP0805          0805        SparkFun-Passives   1
+C_RL_12     100n           CAP0805          0805        SparkFun-Passives   1
+C_SD_1      10u            CAP0805          0805        SparkFun-Passives   1
+C_SD_2      10u            CAP0805          0805        SparkFun-Passives   1
+C_SD_3      100n           CAP0805          0805        SparkFun-Passives   1
+C_SW        100n           CAP0805          0805        SparkFun-Passives   1
+C_U_FILT    100n           CAP0805          0805        SparkFun-Passives   1
+DIODE_SD    DB2X41100L     DB2X41100L       SOD-123FL   cpio                1
+HEAT_0      XH-A-2         XH-A-2           XH-A-2      cpio                1
+HEAT_1      XH-A-2         XH-A-2           XH-A-2      cpio                1
+HEAT_2      XH-A-2         XH-A-2           XH-A-2      cpio                1
+HEAT_3      XH-A-2         XH-A-2           XH-A-2      cpio                1
+JP1                        M03PTH           1X03        SparkFun-Connectors 1
+JP2                        M03PTH           1X03        SparkFun-Connectors 1
+LDO         AP7333         AP7333           SOT23-3     cpio                1
+LED1                       LEDSML0805       SML0805     led                 1
+LED2                       LEDSML0805       SML0805     led                 1
+L_SD_1      2.2u           INDUCTOR0805     0805        SparkFun-Passives   1
+PWR_JACK    PJ-047A        PJ-047A          PJ-047A     cpio                1
+RL_HEAT_0   WS2812B5050    WS2812B5050      WS2812B     adafruit            1
+RL_HEAT_1   WS2812B5050    WS2812B5050      WS2812B     adafruit            1
+RL_HEAT_2   WS2812B5050    WS2812B5050      WS2812B     adafruit            1
+RL_HEAT_3   WS2812B5050    WS2812B5050      WS2812B     adafruit            1
+RP_HEAD     M20X2          M20X2            2X20        SparkFun-Connectors 1
+R_1WIRE     4.7k           RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_BRIGHT    1k             RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_CM_LOAD   10k            RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_CM_SENS   10m            RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_CM_U0     10k            RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_CM_U1     1k             RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_I2C_0     10k            RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_I2C_1     10k            RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_LED_3.3V  1k             RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_LED_RP    1k             RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_PH        1k             RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_PUSHBUT1  1k             RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_PUSHBUT2  100            RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_SD_1B     82k            RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_SD_2A     15k            RESISTOR0805-RES 0805        SparkFun-Passives   1
+R_SD_EN     10k            RESISTOR0805-RES 0805        SparkFun-Passives   1
+S1                         10-XX            B3F-10XX    switch-omron        1
+SENS_HUM_0  XH-A-4         XH-A-4           XH-A-4      cpio                1
+SENS_HUM_1  XH-A-4         XH-A-4           XH-A-4      cpio                1
+SENS_I      INA139         INA139           SOT23-5     cpio                1
+SENS_TEMP_0 XH-A-3         XH-A-3           XH-A-3      cpio                1
+SENS_TEMP_1 XH-A-3         XH-A-3           XH-A-3      cpio                1
+SENS_TEMP_2 XH-A-3         XH-A-3           XH-A-3      cpio                1
+SENS_TEMP_3 XH-A-3         XH-A-3           XH-A-3      cpio                1
+STP_DN      AOZ1280        AOZ1280          SOT23-6     cpio                1
+SWT_HEAT    VNQ5E160K-E    VNQ5E160K-E      POWERSSO-24 cpio                1
+SWT_SENS    74CBTLV3125    74CBTLV3125      TSSOP-14    cpio                1
+U$1         74LVC          74LVC            SOT-363     cpio                1

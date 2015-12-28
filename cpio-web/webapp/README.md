@@ -10,7 +10,7 @@ The goal of the web app is to form a consistent interface between the low-level 
 
 Since the world of Python modules is fragmented the web app is developed in a dedicated virtual environment which guarantees that all developers always use the same module versions. The virtual environment is organized by the tool [`virtualenvwrapper`](http://virtualenvwrapper.readthedocs.org/en/latest/) which can be installed as following:
 
-    pip install virtualenvwrapper
+    pip3 install virtualenvwrapper
 
 Since `virtualenvwrapper` stores all virtual environments at one common place, this place has first to be defined (best in the `.bash_profile` or a similar configuration file):
 
@@ -29,7 +29,7 @@ Finally create the virtual environment in this very folder:
 
 and install all requirements as given by the project:
 
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
 
 
 ## Usage
